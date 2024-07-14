@@ -19,14 +19,12 @@ nav:
   - 推荐课程: recommend/index.md
   - 飞跃手册: cse_fysc.md
   
-  
-
-
 
 
 # Configuration
 theme:
   name: 'material'
+  custom_dir: docs/overrides
   
   language: cn
   features:
@@ -50,7 +48,7 @@ theme:
     # Toggle dark mode
     - scheme: slate
       primary: md-primary-fg-color
-      accent: grey
+      accent: md-primary-fg-color
       toggle:
         icon: material/lightbulb
         name: Switch to light mode
