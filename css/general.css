@@ -1,0 +1,45 @@
+:root {
+    --md-primary-fg-color:        #0E3092;
+  }
+
+  body {
+    font-family: "LXGW WenKai", sans-serif;
+    /* Lite version */
+    /* font-family: "LXGW WenKai Lite", sans-serif; */
+    /* TC version */
+    /* font-family: "LXGW WenKai TC", sans-serif; */
+    /* Screen version */
+    /* font-family: "LXGW WenKai Screen", sans-serif; */
+  }
+
+
+  .badges {
+    margin-top: -2em;
+    margin-bottom: -1em;
+    margin-left: 20px;
+  }
+  
+  .badge {
+    display: inline-block;
+    padding: 0.2em 0.4em;
+    font-size: 85%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+  }
+  .autmation-badge, .labor-badge {
+    background-color: #2fa8ff;
+    color: #161616;
+  }
+  .robotics-badge, .general-badge {
+    background-color: #1ba52b;
+    color: #161616;
+  }
+
+  [data-md-color-scheme="default"] .autmation-badge,
+  [data-md-color-scheme="default"] .robotics-badge{
+    color: #FFFFFF;
+  }
