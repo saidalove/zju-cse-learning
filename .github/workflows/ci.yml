@@ -2,7 +2,7 @@ name: ci
 on:
   push:
     branches:
-      - main # 根据实际的分支情况设置
+      - master # 根据实际的分支情况设置
 permissions:
   contents: write
 jobs:
