@@ -8,6 +8,7 @@ nav:
     - index.md
     - 关于本站: about.md
     - 课程页面模板: template.md
+    - 贡献指南: contributing.md
   - 专业基础课: 
     - major_basic/index.md
   - 专业必修课:
@@ -25,11 +26,18 @@ nav:
 theme:
   name: 'material'
   custom_dir: docs/overrides
-  
-  language: cn
+  language: 'zh'
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil
   features:
+    - content.code.annotate
+    - content.action.edit
     - navigation.instant
     - navigation.tabs
+    - navigation.top
+    - navigation.tracking
+    - navigation.footer
     # - navigation.tabs.sticky
     - navigation.sections
     - navigation.expand
@@ -53,7 +61,7 @@ theme:
         icon: material/lightbulb
         name: Switch to light mode
 
-  language: 'zh'
+
   favicon: img/favicon.ico
 
 markdown_extensions:
@@ -100,3 +108,4 @@ extra_css:
   - css/general.css
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
   - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css
+
