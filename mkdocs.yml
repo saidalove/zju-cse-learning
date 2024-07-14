@@ -1,0 +1,102 @@
+site_name: 控制学习驿站
+copyright: Copyright &copy; 2024 浙江大学控制科学与工程学院学生会学术部
+
+nav: 
+  - 主页: 
+    - index.md
+    - 关于本站: about.md
+    - 课程页面模板: template.md
+  - 专业基础课: 
+    - major_basic/index.md
+  - 专业必修课:
+    - major_mandatory/index.md
+  - 专业选修课:
+    - major_elective/index.md
+  - 实践教学:
+    - practice/index.md
+  - 推荐课程: recommend/index.md
+  - 飞跃手册: cse_fysc.md
+  
+  
+
+
+
+
+# Configuration
+theme:
+  name: 'material'
+  
+  language: cn
+  features:
+    - navigation.instant
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    # - header.autohide
+    # - toc.integrate
+  palette:
+    # Toggle light mode
+    - scheme: default
+      primary: md-primary-fg-color
+      accent: md-primary-fg-color
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to dark mode
+
+    # Toggle dark mode
+    - scheme: slate
+      primary: md-primary-fg-color
+      accent: grey
+      toggle:
+        icon: material/lightbulb
+        name: Switch to light mode
+
+  language: 'zh'
+  favicon: img/favicon.ico
+
+markdown_extensions:
+  - toc:
+      permalink: true
+      slugify: !!python/name:pymdownx.slugs.uslugify
+      toc_depth: 4
+  - meta
+  - def_list
+  - attr_list
+  - md_in_html
+  - sane_lists
+  - admonition
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.snippets
+  - pymdownx.magiclink
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.arithmatex:
+      generic: true
+
+
+
+
+# Repository
+repo_name: saidalove/zju-cse-learning
+repo_url: https://github.com/saidalove/zju-cse-learning
+
+
+extra_css:
+  - css/general.css
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
+  - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css
